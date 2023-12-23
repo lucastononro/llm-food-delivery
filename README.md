@@ -163,7 +163,7 @@ Try asking the chatbot: ```What did I just do?``` after interacting with the int
 <!-- [![demo3](./docs/images/thumbnail.png)](docs/videos/demo_3.mp4) -->
 
 <video width="1360" height="800" controls>
-  <source src="docs/videos/demo_3.mp4" type="video/mp4">
+  <source src="./docs/videos/demo_3.mp4" type="video/mp4">
 </video>
 
 
