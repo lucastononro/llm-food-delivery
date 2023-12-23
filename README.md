@@ -40,6 +40,7 @@ In this demonstration you can order food autonomously, by voice, with no need to
 # 2. Full demo 
 
 https://github.com/lucastononro/llm-food-delivery/assets/105813423/29ad5e7b-bb28-474a-a7d5-63f5a06e99fb
+
 Audio is not great, and it had to be compressed many times, sorry about it :)
 ----
 ----
@@ -158,6 +159,7 @@ Try asking the chatbot: ```What did I just do?``` after interacting with the int
 ## 5.3. Auto text-to-speech
 
 https://github.com/lucastononro/llm-food-delivery/assets/105813423/862e7aa6-d169-418e-9890-15bcfdb1b153
+
 Audio is not great, and it had to be compressed many times, sorry about it :)
 ----
 ----
