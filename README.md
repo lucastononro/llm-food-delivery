@@ -39,7 +39,10 @@ In this demonstration you can order food autonomously, by voice, with no need to
 ----
 # 2. Full demo 
 
-[![Demo Video](./docs/images/thumbnail.png)](docs/videos/LLM-Delivery-app-demo.mp4)
+<!-- [![Demo Video](./docs/images/thumbnail.png)](docs/videos/LLM-Delivery-app-demo.mp4) -->
+<video width="1360" height="800" controls>
+  <source src="docs/videos/LLM-Delivery-app-demo.mp4" type="video/mp4">
+</video>
 
 ----
 ----
@@ -157,7 +160,11 @@ Try asking the chatbot: ```What did I just do?``` after interacting with the int
 
 ## 5.3. Auto text-to-speech
 
-[![demo3](./docs/images/thumbnail.png)](docs/videos/demo_3.mp4)
+<!-- [![demo3](./docs/images/thumbnail.png)](docs/videos/demo_3.mp4) -->
+
+<video width="1360" height="800" controls>
+  <source src="docs/videos/demo_3.mp4" type="video/mp4">
+</video>
 
 
 ----
