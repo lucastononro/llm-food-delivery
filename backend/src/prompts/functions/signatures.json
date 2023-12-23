@@ -120,7 +120,7 @@
             "properties": {
                 "restaurant_uuid": {
                     "type": "string",
-                    "description": "The id of the restaurant page that comes in the function get_restaurant_pages previously called, or in the get_user_actions function if the user opened a restaurant page"
+                    "description": "The id of the restaurant page that comes in the function get_restaurant_pages previously called, or in the get_user_actions function if the user opened a restaurant page. Make sure you know all the parameters before calling this function. Call auxiliary functions before calling it, if necessary."
                 },
                 "food_id": {
                     "type": "string",
@@ -152,6 +152,14 @@
     {
         "name": "place_order",
         "description": "This function places an order with the food items that the user has in the shopping cart. It should be called if the user specifies or confirms that they want to place an order",
+        "parameters": {
+            "type": "object",
+            "properties": {}
+        }
+    },
+    {
+        "name": "activate_handsfree",
+        "description": "This function activates a handsfree chat experience where you are always answering by voice to the user interface",
         "parameters": {
             "type": "object",
             "properties": {}

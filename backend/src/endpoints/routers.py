@@ -89,6 +89,7 @@ def create_router(handler: MainHandler, CONFIG):
             "open_shopping_cart": lambda _: functions.dummy_function(), # dummy function - no need of information
             "close_shopping_cart": lambda _: functions.dummy_function(), # dummy function - no need of information
             "place_order": lambda _: functions.dummy_function(), # dummy function - no need of information
+            "activate_handsfree": lambda _: functions.dummy_function(), # dummy function - no need of information
         }
 
         # Calling the function selected

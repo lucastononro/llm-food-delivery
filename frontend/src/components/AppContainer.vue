@@ -350,6 +350,9 @@
               case "place_order":
                 functionCallResponseContent = this.handlePlaceOrder(functionCallResponse);
                 break;
+              case "activate_handsfree":
+                functionCallResponseContent = this.handleActivateHandsFree(functionCallResponse);
+                break;
               default:
                 functionCallResponseContent = functionCallResponse.data.response.response;
                 console.log("Name of function not found - returning response raw");
@@ -468,6 +471,12 @@
         this.botTypingMsg = "Closing the shopping cart..."
         this.closeCart()
         let msg = "@agent-action: You closed the shopping cart!"
+        return msg
+      },
+      handleActivateHandsFree: function(functionCallResponse){
+        this.botTypingMsg = "Activating handsfree experience..."
+        let msg = "@agent-action: You activated the handsfree voice experience"
+        this.handsFreeFlag = true
         return msg
       },
 
