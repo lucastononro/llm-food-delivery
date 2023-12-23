@@ -64,8 +64,7 @@ def create_router(handler: MainHandler, CONFIG):
         except Exception as e:
             print(e)
             response = {"response": "Oops there was an error, please try again", "function_call": None}
-            # breakpoint()
-        
+
         return response
     
     @router.post("/chat/function_call")
@@ -119,14 +118,8 @@ def create_router(handler: MainHandler, CONFIG):
     async def generate_tts(tts_req: AudioTTSRequest):
         """Receives the text from the frontend and generates the audio file"""
 
-        # Initializes the handler
-        audio_handler = handler.audio_handler
-
         # Generates the audio file
         audio = await openai_service.tts(text=tts_req.text, CONFIG=CONFIG, client=client)
-
-        # Converts it to base64
-        # audio_base64 = audio_handler.convert_audio_to_base64(audio_file)
 
         return {"response": audio}
 
