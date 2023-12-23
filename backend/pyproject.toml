@@ -1,0 +1,59 @@
+[tool.poetry]
+name = "Auto food order Backend"
+version = "0.1.0"
+description = "Backend implementation of the Auto food order"
+authors = ["Lucas Tonon <ltononro@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8.1,<3.12"
+fastapi = "^0.100.0"
+uvicorn = "0.22.0"
+pydantic = {extras = ["email"], version = "^1.10.4"}
+requests = "^2.22.0"
+loguru = "^0.6.0"
+joblib = "^1.2.0"
+certifi = "^2022.12.7"
+python-dotenv = "^1.0.0"
+python-multipart = "^0.0.6"
+openai = {extras = ["embeddings"], version = "^1.3.5"}
+aiohttp = "^3.8.3"
+fastapi-utils = "^0.2.1"
+envyaml = "^1.10.211231"
+tokenizers = "^0.13.2"
+pydub = "^0.25.1"
+llama_index = "*"
+nest_asyncio = "*"
+httpx = "*"
+sqlalchemy = "*"
+databases = "*"
+sqlite-utils = "*"
+pinecone-client = "^2.2.4"
+langchain = "^0.0.312"
+nltk = "^3.8.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2"
+black = {version = "^19.10b0", allow-prereleases = true}
+autopep8 = "^2.0.0"
+ipdb = "^0.13.0"
+pytest-cov = "2.12.1"
+mypy = "0.900"
+
+[tool.poetry.group.dev.dependencies]
+click = "8.0.2"
+pre-commit = "^3.0.0"
+jupyterlab = "^3.5.3"
+
+[tool.black]
+line-length = 120
+target-version = ["py37", "py38"]
+include = '\.pyi?$'
+
+[tool.isort]
+multi_line_output = 3
+line_length = 120
+include_trailing_comma = true
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

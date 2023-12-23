@@ -1,0 +1,17 @@
+version: "3.5"
+
+services:
+  backend:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - type: bind
+        source: .
+        target: /app
+    working_dir: /app
+    command: poetry run uvicorn src.main:app --host 0.0.0.0 --port 8080 --reload
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
