@@ -1,8 +1,6 @@
-import openai
-from fastapi.encoders import jsonable_encoder
-from typing import Optional
-from datetime import datetime
+from tenacity import retry, wait_random, stop_after_attempt
 
+@retry(wait=wait_random(min=1, max=5), stop=stop_after_attempt(5))
 async def chat_completion(messages, CONFIG, functions=[], client=None):
     """Receives the chatlog from the user and answers"""
 

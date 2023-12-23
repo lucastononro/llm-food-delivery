@@ -1,7 +1,6 @@
-import openai
-from fastapi.encoders import jsonable_encoder
-from typing import Optional
+from tenacity import retry, wait_random, stop_after_attempt
 
+@retry(wait=wait_random(min=1, max=5), stop=stop_after_attempt(5))
 async def embeddings(content, CONFIG, client=None):
     """Receives a content in text and embeds it"""
 

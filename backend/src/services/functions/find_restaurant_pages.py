@@ -1,7 +1,8 @@
 from src.utils import get_retriever
 from llama_index.vector_stores.types import ExactMatchFilter
+from tenacity import retry, wait_random, stop_after_attempt
 
-
+@retry(wait=wait_random(min=1, max=5), stop=stop_after_attempt(5))
 async def find_restaurant_pages(
         CONFIG,
         name_of_restaurant=None,
