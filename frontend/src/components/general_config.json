@@ -1,0 +1,12 @@
+{
+    "title": "LLM food delivery virtual assistant",
+    "images": {
+        "header_image": "favicon-white.svg",
+        "bot_image": "favicon.png"
+    },
+    "fstMsg": "Hello, I am here to help you order your dinner, please tell me what you want to order this time!",
+    "typingMsg": "Thinking...",
+    "transcribingMsg": "Transcribing...",
+    "loadMsgPlaceholder": "Loading...",
+    "msgPlaceholder": "Tell me how I can help you..."
+}

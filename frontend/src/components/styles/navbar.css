@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, rgba(255, 21, 21, 0.232), rgb(255,255,255));
+    position:relative;
+    max-height:20%;
+    border-bottom: 1px solid #e5e6ea;
+}
+
+.nav {
+    background: transparent;
+    border-bottom: none;
+}
+
+.navbar-logo {
+    height: 5vh;
+    margin-left: 5vh;
+}
+
+.navbar-title{
+    margin-top: 1.5vh;
+    margin-left: 10px;
+    font-size: 2vh;
+    color:rgba(0, 0, 0, 0.5)
+}

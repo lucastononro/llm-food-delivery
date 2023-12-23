@@ -1,0 +1,116 @@
+.shopping-cart {
+    position: relative;
+    cursor: pointer;
+    padding: 2px;
+    border-radius:15%;
+    margin-right: 10px;
+}
+
+.shopping-cart-logo {
+    display: block;
+    border-radius: 25%;
+    height: 3vh;
+    width: 3vh;
+    margin-left: 1.6vh;
+    margin-right: 1.6vh;
+}
+
+.shopping-cart:hover {
+    background: rgba(0,0,0,0.15);
+}
+  
+
+.cart-item-count {
+    position: relative;
+    top: 6px;
+    right: -12px;
+    background-color: rgba(201,39,93,255);
+    color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopping-cart-container {
+    position: fixed;
+    top: 3vh; 
+    right: 4vw;
+    z-index: 9999;
+    width: 30vw;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 16px;
+    animation: fadeInSlideUp 0.3s ease forwards;
+    max-height:40vh;
+}
+
+.close-btn {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background: linear-gradient(to top right, rgba(188,0,0,255), rgba(201,39,93,255));
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background: rgba(188,0,0,0.75);
+}
+
+.order-btn {
+    background: linear-gradient(to top right, rgba(188,0,0,255), rgba(201,39,93,255));
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.order-btn:hover{
+    background: rgba(188,0,0,0.75);
+}
+
+.total-price-container {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 16px;
+  }
+
+
+.shopping-cart-header {
+    background: white;
+}
+
+.shopping-cart-body{
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 20vh;
+}
+
+.shopping-cart-footer {
+    display: flex;
+    background: white;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 16px;
+}
+
+  
+.fade-away {
+    animation: fadeAway 0.5s forwards;
+}
