@@ -1,0 +1,45 @@
+version: '3.7'
+services:
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+
+    ports:
+      - "80:80"
+    depends_on:
+      - frontend
+      - backend
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    volumes:
+      - type: bind
+        source: ./backend
+        target: /app
+    working_dir: /app
+    command: poetry run python -i -m uvicorn src.main:app --host 0.0.0.0 --port 8080 --reload
+    ports:
+      - "8080:8080"
+    env_file:
+      - ./backend/.env
+    stdin_open: true
+    tty: true
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    working_dir: /app
+    volumes:
+      - /app/node_modules
+      - ./frontend:/app
+    command: npm run dev -- --mode production
+    ports:
+      - "5173:5173"
+    restart: on-failure
+    environment:
+      - NODE_ENV=production
+      - VITE_APP_API_URL=http://localhost:8080
