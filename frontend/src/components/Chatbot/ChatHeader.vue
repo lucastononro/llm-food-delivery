@@ -9,7 +9,7 @@
         <span>Talk to our virtual assistant</span>
       </div>
       <button v-show="!isMinimized" @click="$emit('toggle-handsfree')" class="btn-minimize ml-auto" :style="handsFreeFlag? 'background-color: rgba(0, 0, 0, 0.2); radius-border: 20%;' : ''">
-        <img src='handsfree.svg' alt="Hands-free">
+        <img src='@/assets/handsfree.svg' alt="Hands-free">
       </button>
       <button @click="$emit('toggle-chatbot')" class="btn-minimize ml-auto">
         <img :src="isMinimized ? 'maximize_icon.svg' : 'minimize_icon.svg'" alt="Toggle">
