@@ -176,7 +176,6 @@ def main():
         for ans in sorted(answers[retriever], key=lambda x: x[1], reverse=True):
             print(ans)
         print("\n\n")
-    breakpoint()
 
 
 if __name__ == "__main__":
