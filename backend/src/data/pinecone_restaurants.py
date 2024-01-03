@@ -29,7 +29,7 @@ from llama_index.retrievers import BM25Retriever, BaseRetriever
 from llama_index.vector_stores.types import MetadataFilters, ExactMatchFilter
 
 # VDBs
-import weaviate
+#import weaviate
 import pinecone
 
 ENVIRONMENT = "gcp-starter"
